@@ -1,0 +1,52 @@
+/* Base styles */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Grid layout for year sections */
+.syllabus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Year section card */
+.year-section {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.year-section h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.year-section a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-left: 0.5rem;
+}
+
+.year-section ul {
+    padding-left: 1.2rem;
+    margin: 0;
+}
+
+.year-section li {
+    margin-bottom: 0.4rem;
+}

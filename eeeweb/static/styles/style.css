@@ -1,0 +1,153 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: #005a99;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+/* Navigation */
+nav {
+    background: #004477;
+    padding: 12px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 50px;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Section blocks */
+.section-block {
+    text-align:left;
+    padding: 50px 0;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+
+}
+
+.section-block:nth-child(even) {
+    background-color: #eef5fa;
+}
+
+.section-title {
+    color: #0c4781;
+    margin-bottom: 30px;
+    text-align: center;
+}
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1760a8;
+}
+/* Hero section */
+.intro-text {
+    text-align: justify; 
+    max-width: 700px;   
+    margin: 0 auto 1.5rem auto; 
+    line-height: 1.8;
+    font-size: 1.05rem;
+    color: #333;       
+}
+
+/* Features list */
+.features-list {
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 1.2rem 1.5rem;
+    background: #fafbfc;
+    list-style: none;
+}
+
+.features-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.features-list li:last-child {
+    border-bottom: none;
+}
+
+/* Cards */
+.card {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card-body {
+    text-align: center;
+}
+
+.card-body h3 {
+    color: #003366;
+    font-size: 1.3rem;
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 14px;
+    background-color: #005a99;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.cta:hover {
+    background-color: #003f6b;
+}
+
+/* Footer */
+footer {
+    background: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    nav a {
+        margin: 0 8px;
+        font-size: 1rem;
+    }
+}
+.card-body h3 i {
+    color: #005a99;
+    margin-right: 6px;
+}
+
+.features-list i {
+    margin-right: 8px;
+    color: #005a99;
+    font-size: 1.2rem;
+}
