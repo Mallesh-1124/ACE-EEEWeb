@@ -4,7 +4,6 @@
 A Django-based web application designed for the Electrical and Electronics Engineering department to provide easy access to academic resources, syllabus downloads, contact forms, and departmental updates. The platform features a responsive UI built with Bootstrap 5 and integrates backend form handling with secure data storage. It includes role-based access for admins to manage submissions and leverages email notifications for form responses.
 
 **🔹 Key Features:**
-
 * **Dynamic syllabus pages** for all four academic years with download links.
 * **Contact form with backend storage** using Django models and admin panel for easy management.
 * **Responsive navigation bar & styling** using Bootstrap 5.
@@ -12,11 +11,9 @@ A Django-based web application designed for the Electrical and Electronics Engin
 * **Deployment-ready structure** for hosting with custom domains.
 
 **🛠 Tech Stack:**
-
 * **Backend:** Django 5, Python 3.13
 * **Frontend:** HTML5, CSS3, Bootstrap 5
-* **Database:** SQLite (development), compatible with PostgreSQL/MySQL (production)
-* **Other:** Git, GitHub, PythonAnywhere/Freenom (deployment)
+* **Other:** Git, GitHub, PythonAnywhere (deployment)
 
 # ACE_EEE_Web_project/setup_instructions.txt
 # Create Django project and app
