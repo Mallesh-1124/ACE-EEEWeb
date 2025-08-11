@@ -16,14 +16,14 @@ A Django-based web application designed for the Electrical and Electronics Engin
 * **Other:** Git, GitHub, PythonAnywhere (deployment)
 
 **ACE_EEE_Web_project/setup_instructions.txt**
-** Create Django project and app **
-* django-admin startproject ACE_EEE_Web
-* cd ACE_EEE_Web
-* python manage.py startapp department
-** Run migrations and create superuser **
-* python manage.py makemigrations**
-* python manage.py migrate**
-* python manage.py createsuperuser**
-** Start the server **
-* python manage.py runserver
+* **Create Django project and app**
+* _django-admin startproject ACE_EEE_Web_
+* _cd ACE_EEE_Web_
+* _python manage.py startapp department_
+* **Run migrations and create superuser**
+* _python manage.py makemigrations_
+* _python manage.py migrate_
+* _python manage.py createsuperuser_
+* **Start the server**
+* _python manage.py runserver_
 
