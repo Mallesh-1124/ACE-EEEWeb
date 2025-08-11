@@ -15,15 +15,15 @@ A Django-based web application designed for the Electrical and Electronics Engin
 * **Frontend:** HTML5, CSS3, Bootstrap 5
 * **Other:** Git, GitHub, PythonAnywhere (deployment)
 
-# ACE_EEE_Web_project/setup_instructions.txt
-# Create Django project and app
+->ACE_EEE_Web_project/setup_instructions.txt
+->Create Django project and app
 django-admin startproject ACE_EEE_Web
 cd ACE_EEE_Web
 python manage.py startapp department
-# Run migrations and create superuser
+->Run migrations and create superuser
 python manage.py makemigrations
 python manage.py migrate
 python manage.py createsuperuser
-# Start the server
+->Start the server
 python manage.py runserver
 
