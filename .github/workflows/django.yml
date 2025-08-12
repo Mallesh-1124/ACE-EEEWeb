@@ -13,7 +13,6 @@ jobs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
       - name: Fetch available Python versions
-        id: fetch
         run: |
           curl -s https://raw.githubusercontent.com/actions/python-versions/main/versions-manifest.json \
           | jq -r '.[].version' > versions.txt
@@ -23,9 +22,11 @@ jobs:
       - name: Filter supported Python versions for Django
         id: set-matrix
         run: |
-          # Django 4.2+ supports Python 3.8–3.12
-          # Filter only those versions from the manifest
-          VERSIONS=$(grep -E '^3\.(8|9|10|11|12)$' versions.txt | sort -V | jq -R -s -c 'split("\n")[:-1]')
+          # Match Django-supported versions (3.8–3.12) and keep unique major.minor
+          VERSIONS=$(grep -E '^3\.(8|9|10|11|12)\.' versions.txt \
+            | cut -d. -f1,2 \
+            | sort -uV \
+            | jq -R -s -c 'split("\n")[:-1]')
           echo "Filtered matrix: $VERSIONS"
           echo "matrix=$VERSIONS" >> $GITHUB_OUTPUT
 
